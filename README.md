@@ -1,2 +1,2 @@
-# Lab 3 - Starter
-https://owenbatis.github.io/Lab2_Starter_Owen/
+# Lab 3 - CSS and Agile Intro
+https://owenbatis.github.io/sp26-cse110-lab3/
