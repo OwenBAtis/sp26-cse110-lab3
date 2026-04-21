@@ -1,12 +1,16 @@
 /*Applied changes to the body of the html document.*/
 body{
     /*Apply Green Color to background of document.*/
-    background-color: rgb(159, 148, 216); 
+    color: white;
 }
 @counter-style fallback-example{
     system:fixed;
     symbols: "\24B6" "\24B7" "\24B8";
     fallback: upper-alpha;
+}
+/*Universal Selector*/
+*{
+    background-color: purple;
 }
 /*Changes made to the header Visualy.*/
 h1{
@@ -17,18 +21,20 @@ h1{
     text-align: center;
     text-decoration: underline;
 }
-
-p{
+/*Element List*/
+p, summary{
     font-family: "myFont", sans-serif; 
     border: 2px solid black;
     border-style: dashed;
 }
 
-ul{
+ul:hover{
     border: 1px solid red;
     border-radius: 100px;
+    color: Black; 
 }
 
+/*element selector*/
 span{
     background-color: rgb(250 0 0 /50%);
 }
@@ -56,7 +62,39 @@ ol{
 button:hover{
     color: #8ACE00;
 }
+/*Attribute Selector*/
+li[class="a"]{
+    color: Red;
+}
+li[class="b"]{
+    color: Purple;
+}
 
+/*Combinators*/
+ol > li{
+    background-color: #8ACE00;
+}
+body p strong{
+    background-color: #8ACE00;
+}
+h1 ~ h2{
+    background-color:Grey;
+
+}
+h3 + details{
+    font-size: 125%;
+}
+div.borderbox{
+    border-top-width: 20px; 
+    border-top-style: groove;
+    color:#8ACE00;
+}
+/*Id Selectors*/
+#goal{
+    color: black; 
+}
+
+/*Class Selectors*/
 .box{
     width: 500px;
     height: 500px;
@@ -64,10 +102,15 @@ button:hover{
     border: 5px solid #8ACE00; 
     display: inline-block
 }
+
 .borderbox{
     border-top-width: 4px; 
     border-top-style: groove;
     border-top-color: black;
+    /*Nested*/
+    &:hover{
+        background-color: rgb(172, 67, 172)
+    }
 }
 .disa{
     display: inline-block;
@@ -101,4 +144,8 @@ button:hover{
 @font-face {
     font-family: "myFont";
     src: url(Playwrite_NZ_Guides\PlaywriteNZGuides-Regular.ttf);
+}
+
+ol:has(.b){
+    background-color: grey;
 }
