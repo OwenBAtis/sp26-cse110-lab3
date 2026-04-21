@@ -1,0 +1,59 @@
+/*Applied changes to the body of the html document.*/
+body{
+    /*Apply Green Color to background of document.*/
+    background-color: rgb(159, 148, 216); 
+}
+
+/*Changes made to the header Visualy.*/
+h1{
+    color: rbg(0,0,0); 
+    background-color: #8ACE00;
+    border: 5px color(#ffffff);
+    padding: 0.1cm;
+    text-align: center;
+    text-decoration: underline;
+}
+
+p{
+    font-family:sans-serif; 
+    border: 2px solid black;
+    border-style: dashed;
+}
+ul{
+    border: 1px solid red;
+    border-radius: 100px;
+}
+span{
+    background-color: rgb(250 0 0 /50%);
+}
+.box{
+    width: 500px;
+    height: 500px;
+    padding: 1cm 1cm 0.5cm 2cm;
+    border: 5px solid #8ACE00; 
+    display: inline-block
+}
+.borderbox{
+    border-top-width: 4px; 
+    border-top-style: groove;
+    border-top-color: black;
+}
+.disa{
+    display: inline-block;
+    margin: -10px;
+}
+.disb{
+    display: block; 
+    margin: 20px;
+}
+video{
+    max-width: 500px;
+    max-height: 500px;
+    margin: 0px;
+    padding-bottom: 2pc;
+    padding-top: 1mm;
+    padding-left: 1in;
+}
+.container{
+    display: inline;
+}
