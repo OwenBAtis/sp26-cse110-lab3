@@ -3,7 +3,11 @@ body{
     /*Apply Green Color to background of document.*/
     background-color: rgb(159, 148, 216); 
 }
-
+@counter-style fallback-example{
+    system:fixed;
+    symbols: "\24B6" "\24B7" "\24B8";
+    fallback: upper-alpha;
+}
 /*Changes made to the header Visualy.*/
 h1{
     color: rbg(0,0,0); 
@@ -15,17 +19,44 @@ h1{
 }
 
 p{
-    font-family:sans-serif; 
+    font-family: "myFont", sans-serif; 
     border: 2px solid black;
     border-style: dashed;
 }
+
 ul{
     border: 1px solid red;
     border-radius: 100px;
 }
+
 span{
     background-color: rgb(250 0 0 /50%);
 }
+
+video{
+    max-width: 500px;
+    max-height: 500px;
+    margin: 0px;
+    padding-bottom: 2pc;
+    padding-top: 1mm;
+    padding-left: 1in;
+}
+audio{
+    position:static;
+}
+
+ol{
+    position:relative;
+    top: -20px;
+    left:20px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+button:hover{
+    color: #8ACE00;
+}
+
 .box{
     width: 500px;
     height: 500px;
@@ -40,20 +71,34 @@ span{
 }
 .disa{
     display: inline-block;
-    margin: -10px;
+    margin: 20px;
 }
 .disb{
     display: block; 
     margin: 20px;
 }
-video{
-    max-width: 500px;
-    max-height: 500px;
-    margin: 0px;
-    padding-bottom: 2pc;
-    padding-top: 1mm;
-    padding-left: 1in;
-}
 .container{
     display: inline;
+}
+.selected:active{
+    color: purple;
+    box-shadow: 2px 2px 5px red
+}
+
+.GridDisplay{
+    display: grid;
+    grid-template-columns: 2fr 2fr; 
+    grid-template-rows: 1fr 1fr 1fr;
+    list-style: fallback-example; 
+}
+
+@media (50em >= width >= 30em) {
+    button:hover{
+        color:aquamarine;
+    }
+}
+
+@font-face {
+    font-family: "myFont";
+    src: url(Playwrite_NZ_Guides\PlaywriteNZGuides-Regular.ttf);
 }
