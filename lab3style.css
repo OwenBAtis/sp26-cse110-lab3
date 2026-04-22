@@ -23,7 +23,7 @@ body{
 h1{
     color: rgb(0,0,0); 
     background-color: #8ACE00;
-    border: 5px color(xyz 45 20 0);
+    border: 5px red;
     padding: 0.1cm;
     text-align: center;
     text-decoration: underline;
