@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "myFont";
+    src: url(Montserrat-Regular.ttf) format("truetype");
+}
+html{
+    font-family:"myFont", sans-serif;
+}
 /*Applied changes to the body of the html document.*/
 body{
     /*Apply Green Color to background of document.*/
@@ -139,11 +146,6 @@ div.borderbox{
     button:hover{
         color:aquamarine;
     }
-}
-
-@font-face {
-    font-family: "myFont";
-    src: url(Playwrite_NZ_Guides\PlaywriteNZGuides-Regular.ttf);
 }
 
 ol:has(.b){
