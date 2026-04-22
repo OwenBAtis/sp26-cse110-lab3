@@ -114,10 +114,6 @@ div.borderbox{
     border-top-width: 4px; 
     border-top-style: groove;
     border-top-color: black;
-    /*Nested*/
-    :hover{
-        background-color: rgb(172, 67, 172);
-    }
 }
 .disa{
     display: inline-block;
@@ -132,7 +128,7 @@ div.borderbox{
 }
 .selected:active{
     color: purple;
-    box-shadow: 2px 2px 5px red
+    box-shadow: 2px 2px 5px red;
 }
 
 .GridDisplay{
@@ -140,8 +136,11 @@ div.borderbox{
     grid-template-columns: 2fr 2fr; 
     grid-template-rows: 1fr 1fr 1fr;
     list-style: fallback-example; 
+    /*Nested*/
+    .first{
+        color:Green;
+    }
 }
-
 @media (50em >= width >= 30em) {
     button:hover{
         color:aquamarine;
